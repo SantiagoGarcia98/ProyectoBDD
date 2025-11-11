@@ -80,3 +80,6 @@ INNER JOIN DatosPersonales dp_med ON m.IdDatosPersonales = dp_med.IdDatosPersona
 LEFT JOIN MedicoEspecialidad me ON m.IdDatosPersonales = me.IDEspecialidad
 LEFT JOIN EspecialidadesMedicas e ON me.IDEspecialidad = e.IDEspecialidad
 GO
+
+SELECT name
+FROM sys.views;
