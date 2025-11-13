@@ -61,6 +61,7 @@ LEFT JOIN EspecialidadesMedicas em on me.IDEspecialidad = em.IDEspecialidad;
 -- se utiliza left para incluir medicos sin una especialidad cargada
 GO
 
+CREATE VIEW vw_Receta    AS    
 SELECT
 
     r.IDReceta, r.FechaHoraReceta , r.Indicaciones,
@@ -83,3 +84,11 @@ GO
 
 SELECT name
 FROM sys.views;
+
+SELECT  obraSocial , Paciente , IDPaciente
+FROM vw_Pacientes
+ORDER BY obraSocial 
+
+SELECT especialidad , Medico
+FROM vw_Medico
+ORDER BY especialidad
