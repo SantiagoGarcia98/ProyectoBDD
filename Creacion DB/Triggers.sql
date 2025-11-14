@@ -10,6 +10,7 @@ Begin
 End;
 Go
 
+-- Trigger Creado para eliminar una atencion correspondiente a un turno, tras el mismo ser eliminado
 Create Trigger TR_EliminarAtencion
 On Turnos
 Instead Of Delete
